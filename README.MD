@@ -1,4 +1,4 @@
-# RWhisper - API Simples com uso da IA Whisper da OpenAI
+# RWhisper - API Simples com uso da IA Whisper OpenAI
 
 A IA Whisper é a inteligência responsável por executar transcrições de áudio e vídeo.
 Utilizando o modelo oficial, este repositório possui uma api que usa o Whisper de forma independente.

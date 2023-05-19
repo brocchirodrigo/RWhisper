@@ -1,0 +1,20 @@
+service: whisper
+
+provider:
+  name: aws
+  runtime: python3.10
+
+plugins:
+  - serverless-wsgi
+  - serverless-python-requirements
+
+functions:
+  api:
+    handler: wsgi_handler.handler
+    events:
+      - http: ANY /
+      - http: ANY /{proxy+}
+
+custom:
+  wsgi:
+    app: main.app
